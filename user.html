@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self' 'unsafe-inline' https://www.w3schools.com/lib/w3.css; 
+      img-src https://*;
+      child-src 'none';
+      
+      
+      ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css">
+    <title>User</title>
+</head>
+<body>
+    <div class="w3-container w3-border w3-teal">
+        <div id="center">
+            <form action="/admin" method="get">
+                <h2>User</h2>
+                
+                <input type="submit" value="Login admin">
+            </form>
+        </div>
+        <a href='/admin'>Admin</a>
+        <button id="btn">alert</button>     
+    </div>
+    
+</body>
+<script>
+    const btn1 =document.getElementById('btn');
+    btn1.addEventListener('click', (e)=>{
+       alert("btn pressed");
+    })
+
+</script>
+</html>
